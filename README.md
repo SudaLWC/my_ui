@@ -1,24 +1,27 @@
-# my_ui
+# my_ui(vue 插件)
 
-## Project setup
+## 初始化vue项目
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+vue create project
 ```
 
-### Compiles and minifies for production
+### 安装组件库
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+npm install suda_my-ui
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 全局导入
+```
+import MyUI from 'suda_my-ui'
+import 'suda_my-ui/dist/my-ui.css'
+
+Vue.use(MyUI)
+```
+
+### CDN 引入
+```
+<!-- 引入 my-ui 库 -->
+<script src="https://cdn.jsdelivr.net/npm/suda_my-ui@0.1.0/dist/my-ui.umd.min.js"></script>
+<!-- 引入 my-ui 样式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suda_my-ui@0.1.0/dist/my-ui.css">
+```
